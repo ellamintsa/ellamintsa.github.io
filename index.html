@@ -37,33 +37,36 @@
             margin: auto;
         }
 
+        /* ------------------ */
+        /* Pills sous la bannière */
+        /* ------------------ */
         .sections {
             display: flex;
-            justify-content: space-around;
-            margin-top: 2em;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 1em;
             flex-wrap: wrap;
         }
 
         .card {
-            display: block;
-            background: white;
-            width: 250px;
-            margin: 1em;
-            padding: 1.5em;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+            background: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px; /* pill shape */
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-decoration: none;
-            color: #111;
-            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            background: #005fa3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        /* Sections détaillées */
         #projects, #publications, #cv, #teaching, #conferences, #contact {
             background: #f8f8f8;
             margin: 2em auto;
@@ -92,11 +95,11 @@
             width: 60px;
             display: block;
             margin: 0 auto 10px auto;
-            transition: transform 0.3s ease; /* animation fluide */
+            transition: transform 0.3s ease;
         }
 
         .section-img:hover {
-            transform: scale(1.2) rotate(10deg); /* zoom + légère rotation */
+            transform: scale(1.2) rotate(10deg);
         }
 
         /* Lien de téléchargement CV */
@@ -131,38 +134,20 @@
     </div>
 </div>
 
+<!-- ------------------ -->
+<!-- Pills sous la bannière -->
+<!-- ------------------ -->
+<div class="sections">
+    <a href="#projects" class="card">Projects</a>
+    <a href="#publications" class="card">Publications</a>
+    <a href="#cv" class="card">CV</a>
+    <a href="#teaching" class="card">Teaching</a>
+    <a href="#conferences" class="card">Conferences</a>
+    <a href="#contact" class="card">Contact</a>
+</div>
+
 <div class="content">
-    <h3>Welcome to my personal website</h3>
-    <p>Explore my research, publications, CV, teaching activities, conferences and how to contact me.</p>
 
-    <div class="sections">
-        <a href="#projects" class="card">
-            <h4>Projects</h4>
-            <p>My recent research works and collaborations.</p>
-        </a>
-        <a href="#publications" class="card">
-            <h4>Publications</h4>
-            <p>Articles, preprints, and scientific contributions.</p>
-        </a>
-        <a href="#cv" class="card">
-            <h4>CV</h4>
-            <p>Curriculum Vitae with academic background and achievements.</p>
-        </a>
-        <a href="#teaching" class="card">
-            <h4>Teaching</h4>
-            <p>Courses, tutorials, and student supervision.</p>
-        </a>
-        <a href="#conferences" class="card">
-            <h4>Conferences & Seminars</h4>
-            <p>Talks, workshops, and academic presentations.</p>
-        </a>
-        <a href="#contact" class="card">
-            <h4>Contact</h4>
-            <p>Reach me via email or academic networks.</p>
-        </a>
-    </div>
-
-    <!-- Sections détaillées avec icônes en ligne -->
     <div id="projects">
         <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects illustration" class="section-img">
         <h3>Projects</h3>
