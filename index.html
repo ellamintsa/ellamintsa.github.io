@@ -28,15 +28,8 @@
             text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin: 0.2em 0;
-        }
-        h2 {
-            font-size: 1.2em;
-            font-weight: 400;
-            margin: 0;
-        }
+        h1 { font-size: 2.5em; margin: 0.2em 0; }
+        h2 { font-size: 1.2em; font-weight: 400; margin: 0; }
 
         .content {
             padding: 2em;
@@ -44,7 +37,6 @@
             margin: auto;
         }
 
-        /* Conteneur des cartes */
         .sections {
             display: flex;
             justify-content: space-around;
@@ -52,7 +44,6 @@
             flex-wrap: wrap;
         }
 
-        /* Carte entièrement cliquable */
         .card {
             display: block;
             background: white;
@@ -73,7 +64,6 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
 
-        /* Sections détaillées */
         #projects, #publications, #cv, #teaching, #conferences, #contact {
             background: #f8f8f8;
             margin: 2em auto;
@@ -95,11 +85,8 @@
             color: #444;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
-        /* Style pour les images des sections */
         .section-img {
             width: 60px;
             display: block;
@@ -110,87 +97,87 @@
 </head>
 <body>
 
-    <div class="banner">
-        <div style="display:flex; align-items:center; justify-content:center; gap: 20px;">
-            <img src="photo.jpg" alt="Photo de Eddy Ella Minsta" 
-                 style="width:150px; height:150px; border-radius:50%; object-fit:cover; border: 3px solid rgba(255,255,255,0.8);">
-            <div style="text-align:left; color:white; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">
-                <h1>Eddy Ella Minsta</h1>
-                <h2>Researcher in Statistics</h2>
-                <p>Nonparametric estimation, Statistical learning for SDE paths, Statistical inference for SDE.</p>
-            </div>
+<div class="banner">
+    <div style="display:flex; align-items:center; justify-content:center; gap: 20px;">
+        <img src="photo.jpg" alt="Photo de Eddy Ella Minsta" 
+             style="width:150px; height:150px; border-radius:50%; object-fit:cover; border: 3px solid rgba(255,255,255,0.8);">
+        <div style="text-align:left; color:white; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">
+            <h1>Eddy Ella Minsta</h1>
+            <h2>Researcher in Statistics</h2>
+            <p>Nonparametric estimation, Statistical learning for SDE paths, Statistical inference for SDE.</p>
         </div>
     </div>
+</div>
 
-    <div class="content">
-        <h3>Welcome to my personal website</h3>
-        <p>Explore my research, publications, CV, teaching activities, conferences and how to contact me.</p>
+<div class="content">
+    <h3>Welcome to my personal website</h3>
+    <p>Explore my research, publications, CV, teaching activities, conferences and how to contact me.</p>
 
-        <div class="sections">
-            <a href="#projects" class="card">
-                <h4>Projects</h4>
-                <p>My recent research works and collaborations.</p>
-            </a>
-            <a href="#publications" class="card">
-                <h4>Publications</h4>
-                <p>Articles, preprints, and scientific contributions.</p>
-            </a>
-            <a href="#cv" class="card">
-                <h4>CV</h4>
-                <p>Curriculum Vitae with academic background and achievements.</p>
-            </a>
-            <a href="#teaching" class="card">
-                <h4>Teaching</h4>
-                <p>Courses, tutorials, and student supervision.</p>
-            </a>
-            <a href="#conferences" class="card">
-                <h4>Conferences & Seminars</h4>
-                <p>Talks, workshops, and academic presentations.</p>
-            </a>
-            <a href="#contact" class="card">
-                <h4>Contact</h4>
-                <p>Reach me via email or academic networks.</p>
-            </a>
-        </div>
-
-        <!-- Sections détaillées avec images -->
-        <div id="projects">
-            <img src="projects.png" alt="Projects illustration" class="section-img">
-            <h3>Projects</h3>
-            <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
-        </div>
-
-        <div id="publications">
-            <img src="publications.png" alt="Publications illustration" class="section-img">
-            <h3>Publications</h3>
-            <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
-        </div>
-
-        <div id="cv">
-            <img src="cv.png" alt="CV illustration" class="section-img">
-            <h3>CV</h3>
-            <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
-        </div>
-
-        <div id="teaching">
-            <img src="teaching.png" alt="Teaching illustration" class="section-img">
-            <h3>Teaching</h3>
-            <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
-        </div>
-
-        <div id="conferences">
-            <img src="conferences.png" alt="Conferences illustration" class="section-img">
-            <h3>Conferences & Seminars</h3>
-            <p>Include talks, workshops, and academic presentations with dates and locations.</p>
-        </div>
-
-        <div id="contact">
-            <img src="contact.png" alt="Contact illustration" class="section-img">
-            <h3>Contact</h3>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </div>
-
+    <div class="sections">
+        <a href="#projects" class="card">
+            <h4>Projects</h4>
+            <p>My recent research works and collaborations.</p>
+        </a>
+        <a href="#publications" class="card">
+            <h4>Publications</h4>
+            <p>Articles, preprints, and scientific contributions.</p>
+        </a>
+        <a href="#cv" class="card">
+            <h4>CV</h4>
+            <p>Curriculum Vitae with academic background and achievements.</p>
+        </a>
+        <a href="#teaching" class="card">
+            <h4>Teaching</h4>
+            <p>Courses, tutorials, and student supervision.</p>
+        </a>
+        <a href="#conferences" class="card">
+            <h4>Conferences & Seminars</h4>
+            <p>Talks, workshops, and academic presentations.</p>
+        </a>
+        <a href="#contact" class="card">
+            <h4>Contact</h4>
+            <p>Reach me via email or academic networks.</p>
+        </a>
     </div>
+
+    <!-- Sections détaillées avec icônes en ligne -->
+    <div id="projects">
+        <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects illustration" class="section-img">
+        <h3>Projects</h3>
+        <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
+    </div>
+
+    <div id="publications">
+        <img src="https://img.icons8.com/ios-filled/50/000000/books.png" alt="Publications illustration" class="section-img">
+        <h3>Publications</h3>
+        <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
+    </div>
+
+    <div id="cv">
+        <img src="https://img.icons8.com/ios-filled/50/000000/resume.png" alt="CV illustration" class="section-img">
+        <h3>CV</h3>
+        <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
+    </div>
+
+    <div id="teaching">
+        <img src="https://img.icons8.com/ios-filled/50/000000/teacher.png" alt="Teaching illustration" class="section-img">
+        <h3>Teaching</h3>
+        <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
+    </div>
+
+    <div id="conferences">
+        <img src="https://img.icons8.com/ios-filled/50/000000/microphone.png" alt="Conferences illustration" class="section-img">
+        <h3>Conferences & Seminars</h3>
+        <p>Include talks, workshops, and academic presentations with dates and locations.</p>
+    </div>
+
+    <div id="contact">
+        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Contact illustration" class="section-img">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </div>
+
+</div>
 
 </body>
 </html>
