@@ -12,6 +12,7 @@
             background-color: #f4f7f9;
             color: #111;
         }
+
         .banner {
             width: 100%;
             height: 300px;
@@ -26,6 +27,7 @@
             color: white;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
         }
+
         h1 {
             font-size: 2.5em;
             margin: 0.2em 0;
@@ -35,154 +37,154 @@
             font-weight: 400;
             margin: 0;
         }
+
         .content {
             padding: 2em;
             max-width: 900px;
             margin: auto;
         }
+
         /* Conteneur des cartes */
-.sections {
-    display: flex;              /* aligne les cartes horizontalement */
-    justify-content: space-around; /* espace entre les cartes */
-    margin-top: 2em;            /* espace au-dessus */
-    flex-wrap: wrap;            /* passe à la ligne sur petits écrans */
-}
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2em;
+            flex-wrap: wrap;
+        }
 
-/* Style de chaque carte */
-.card {
-    background: white;                     /* fond blanc */
-    width: 250px;                          /* largeur fixe */
-    margin: 1em;                           /* marge entre les cartes */
-    padding: 1.5em;                        /* espace interne */
-    border-radius: 12px;                   /* coins arrondis */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* ombre douce */
-    text-align: center;                     /* texte centré */
-    transition: transform 0.2s, box-shadow 0.2s; /* animation hover */
-    cursor: pointer;                        /* souris en main */
-}
+        /* Style de chaque carte */
+        .card {
+            background: white;
+            width: 250px;
+            margin: 1em;
+            padding: 1.5em;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
 
-/* Effet hover */
-.card:hover {
-    transform: translateY(-5px);                  /* s'élève légèrement */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);     /* ombre plus marquée */
-}
+        /* Effet hover */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
 
-/* Style des liens dans la carte */
-.card a {
-    text-decoration: none; /* supprime le soulignement */
-    color: #111;           /* couleur du texte */
-    font-weight: 600;      /* texte un peu plus gras */
-}
-        .content > div.content {
-    background: #f8f8f8;        /* fond clair pour chaque section */
-    margin: 2em auto;           /* espace au-dessus et en-dessous */
-    padding: 2em;               /* espace interne confortable */
-    border-radius: 10px;        /* coins arrondis comme les cartes */
-    max-width: 900px;           /* limite la largeur sur grand écran */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* ombre douce */
-}
+        /* Style des liens dans la carte */
+        .card a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 600;
+        }
 
-/* Sections détaillées */
-#projects, #publications, #cv, #teaching, #conferences, #contact {
-    background: #f8f8f8;
-    margin: 2em auto;
-    padding: 2em;
-    border-radius: 10px;
-    max-width: 900px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
+        /* Sections détaillées ciblées par id */
+        #projects, #publications, #cv, #teaching, #conferences, #contact {
+            background: #f8f8f8;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
 
-#projects h3, #publications h3, #cv h3, #teaching h3, #conferences h3, #contact h3 {
-    margin-top: 0;
-    color: #222;
-    font-size: 1.6em;
-}
+        #projects h3, #publications h3, #cv h3, #teaching h3, #conferences h3, #contact h3 {
+            margin-top: 0;
+            color: #222;
+            font-size: 1.6em;
+        }
 
-#projects p, #publications p, #cv p, #teaching p, #conferences p, #contact p {
-    line-height: 1.6;
-    color: #444;
-}
+        #projects p, #publications p, #cv p, #teaching p, #conferences p, #contact p {
+            line-height: 1.6;
+            color: #444;
+        }
+
         html {
-    scroll-behavior: smooth;
-}
+            scroll-behavior: smooth;
+        }
+
     </style>
 </head>
 <body>
+
     <div class="banner">
-    <div style="display:flex; align-items:center; justify-content:center; gap: 20px;">
-        <!-- Photo du chercheur -->
-        <img src="photo.jpg" alt="Photo de Eddy Ella Minsta" 
-             style="width:150px; height:150px; border-radius:50%; object-fit:cover; border: 3px solid rgba(255,255,255,0.8);">
-        
-        <!-- Texte -->
-        <div style="text-align:left; color:white; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">
-            <h1>Eddy Ella Minsta</h1>
-            <h2>Researcher in Statistics</h2>
-            <p>Nonparametric estimation, Statistical learning for SDE paths, Statistical inference for SDE.</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap: 20px;">
+            <!-- Photo du chercheur -->
+            <img src="photo.jpg" alt="Photo de Eddy Ella Minsta" 
+                 style="width:150px; height:150px; border-radius:50%; object-fit:cover; border: 3px solid rgba(255,255,255,0.8);">
+            
+            <!-- Texte -->
+            <div style="text-align:left; color:white; text-shadow:1px 1px 3px rgba(0,0,0,0.7);">
+                <h1>Eddy Ella Minsta</h1>
+                <h2>Researcher in Statistics</h2>
+                <p>Nonparametric estimation, Statistical learning for SDE paths, Statistical inference for SDE.</p>
+            </div>
         </div>
     </div>
-</div>
 
     <div class="content">
-    <h3>Welcome to my personal website</h3>
-    <p>Explore my research, publications, CV, teaching activities, conferences and how to contact me.</p>
+        <h3>Welcome to my personal website</h3>
+        <p>Explore my research, publications, CV, teaching activities, conferences and how to contact me.</p>
 
-    <div class="sections">
-        <div class="card">
-            <a href="#projects">Projects</a>
-            <p>My recent research works and collaborations.</p>
-        </div>
-        <div class="card">
-            <a href="#publications">Publications</a>
-            <p>Articles, preprints, and scientific contributions.</p>
-        </div>
-        <div class="card">
-            <a href="#cv">CV</a>
-            <p>Curriculum Vitae with academic background and achievements.</p>
-        </div>
-        <div class="card">
-            <a href="#teaching">Teaching</a>
-            <p>Courses, tutorials, and student supervision.</p>
-        </div>
-        <div class="card">
-            <a href="#conferences">Conferences & Seminars</a>
-            <p>Talks, workshops, and academic presentations.</p>
-        </div>
-        <div class="card">
-            <a href="#contact">Contact</a>
-            <p>Reach me via email or academic networks.</p>
-        </div>
-    </div>
+        <div class="sections">
+            <div class="card">
+                <a href="#projects">Projects</a>
+                <p>My recent research works and collaborations.</p>
+            </div>
+            <div class="card">
+                <a href="#publications">Publications</a>
+                <p>Articles, preprints, and scientific contributions.</p>
+            </div>
+            <div class="card">
+                <a href="#cv">CV</a>
+                <p>Curriculum Vitae with academic background and achievements.</p>
+            </div>
+            <div class="card">
+                <a href="#teaching">Teaching</a>
+                <p>Courses, tutorials, and student supervision.</p>
+            </div>
+            <div class="card">
+                <a href="#conferences">Conferences & Seminars</a>
+                <p>Talks, workshops, and academic presentations.</p>
+            </div>
+            <div class="card">
+                <a href="#contact">Contact</a>
+                <p>Reach me via email or academic networks.</p>
+            </div>
+        </div> <!-- FIN .sections -->
+
         <!-- Sections détaillées -->
-<div id="projects">
-    <h3>Projects</h3>
-    <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
-</div>
+        <div id="projects">
+            <h3>Projects</h3>
+            <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
+        </div>
 
-<div id="publications">
-    <h3>Publications</h3>
-    <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
-</div>
+        <div id="publications">
+            <h3>Publications</h3>
+            <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
+        </div>
 
-<div id="cv">
-    <h3>CV</h3>
-    <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
-</div>
+        <div id="cv">
+            <h3>CV</h3>
+            <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
+        </div>
 
-<div id="teaching">
-    <h3>Teaching</h3>
-    <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
-</div>
+        <div id="teaching">
+            <h3>Teaching</h3>
+            <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
+        </div>
 
-<div id="conferences">
-    <h3>Conferences & Seminars</h3>
-    <p>Include talks, workshops, and academic presentations with dates and locations.</p>
-</div>
+        <div id="conferences">
+            <h3>Conferences & Seminars</h3>
+            <p>Include talks, workshops, and academic presentations with dates and locations.</p>
+        </div>
 
-<div id="contact">
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-</div>
-</div>
+        <div id="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </div>
+
+    </div> <!-- FIN .content -->
+
 </body>
 </html>
