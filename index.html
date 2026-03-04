@@ -5,7 +5,6 @@
     <title>Eddy Ella Minsta</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Style général */
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
@@ -24,7 +23,7 @@
             background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             text-align: left;
             color: white;
             padding: 1em;
@@ -50,7 +49,7 @@
             font-size: 1.2em;
         }
 
-        /* Navigation pills simples */
+        /* Navigation */
         .nav {
             display: flex;
             justify-content: center;
@@ -73,7 +72,7 @@
 
         /* Sections */
         .section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 2em auto;
             padding: 2em;
             background: #fff;
@@ -87,14 +86,33 @@
             font-size: 1.6em;
         }
 
-        /* Listes */
-        ul, ol {
-            padding-left: 1.5em;
+        /* Tables sobres */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        table tr:hover {
+            background-color: #f1f9ff;
         }
 
         html { scroll-behavior: smooth; }
 
-        /* Bouton téléchargement CV */
         .cv-download {
             display: inline-block;
             margin-top: 10px;
@@ -113,7 +131,7 @@
 </head>
 <body>
 
-    <!-- Banner avec photo et présentation -->
+    <!-- Banner -->
     <div class="banner">
         <img src="photo.jpg" alt="Photo de Eddy Ella Minsta">
         <div class="banner-text">
@@ -123,7 +141,7 @@
         </div>
     </div>
 
-    <!-- Navigation vers sections -->
+    <!-- Navigation -->
     <div class="nav">
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
@@ -133,69 +151,125 @@
         <a href="#contact">Contact</a>
     </div>
 
-    <!-- Section Projects -->
-    <div id="projects" class="section">
-        <h3>Projects</h3>
-        <!-- Remplacer ou ajouter les projets ici -->
-        <ul>
-            <li><strong>Project 1:</strong> Brief description, objectives, collaborators.</li>
-            <li><strong>Project 2:</strong> Brief description, objectives, collaborators.</li>
-            <li><strong>Project 3:</strong> Brief description, objectives, collaborators.</li>
-        </ul>
-    </div>
+    <div class="content">
 
-    <!-- Section Publications -->
-    <div id="publications" class="section">
-        <h3>Publications</h3>
-        <!-- Ajouter les publications avec liens (HAL, arXiv, DOI) -->
-        <ol>
-            <li>Author et al., "Title of Paper 1", Journal, Year. <a href="#">Link</a></li>
-            <li>Author et al., "Title of Paper 2", Journal, Year. <a href="#">Link</a></li>
-            <li>Author et al., "Title of Paper 3", Journal, Year. <a href="#">Link</a></li>
-        </ol>
-    </div>
+        <!-- Projects -->
+        <div id="projects" class="section">
+            <h3>Projects</h3>
+            <!-- Tableau de projets académique -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Collaborators</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project 1</td>
+                        <td>Study of stochastic differential equations in finance.</td>
+                        <td>Author A, Author B</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project 2</td>
+                        <td>Nonparametric statistical methods for diffusion data.</td>
+                        <td>Author C, Author D</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project 3</td>
+                        <td>Machine learning approaches for SDE path prediction.</td>
+                        <td>Author E</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- Section CV -->
-    <div id="cv" class="section">
-        <h3>Curriculum Vitae</h3>
-        <!-- Informations structurées -->
-        <ul>
-            <li><strong>Education:</strong> PhD in Statistics – University, Year</li>
-            <li><strong>Positions:</strong> Current and previous academic positions</li>
-            <li><strong>Awards:</strong> List of honors and recognitions</li>
-        </ul>
-        <!-- CV téléchargeable -->
-        <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV (PDF)</a>
-    </div>
+        <!-- Publications -->
+        <div id="publications" class="section">
+            <h3>Publications</h3>
+            <!-- Tableau des publications académique -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Authors</th>
+                        <th>Title</th>
+                        <th>Journal / Conference</th>
+                        <th>Year</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Author et al.</td>
+                        <td>Title of Paper 1</td>
+                        <td>Journal A</td>
+                        <td>2022</td>
+                        <td><a href="#">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Author et al.</td>
+                        <td>Title of Paper 2</td>
+                        <td>Journal B</td>
+                        <td>2021</td>
+                        <td><a href="#">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td>Author et al.</td>
+                        <td>Title of Paper 3</td>
+                        <td>Conference C</td>
+                        <td>2020</td>
+                        <td><a href="#">Link</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- Section Teaching -->
-    <div id="teaching" class="section">
-        <h3>Teaching</h3>
-        <ul>
-            <li><strong>Course 1:</strong> Description of course, semester, level</li>
-            <li><strong>Course 2:</strong> Description of course, semester, level</li>
-            <li><strong>Supervision:</strong> Theses, projects, student mentoring</li>
-        </ul>
-    </div>
+        <!-- CV -->
+        <div id="cv" class="section">
+            <h3>Curriculum Vitae</h3>
+            <ul>
+                <li><strong>Education:</strong> PhD in Statistics – University, Year</li>
+                <li><strong>Positions:</strong> Current and previous academic positions</li>
+                <li><strong>Awards:</strong> List of honors and recognitions</li>
+            </ul>
+            <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV (PDF)</a>
+        </div>
 
-    <!-- Section Conferences -->
-    <div id="conferences" class="section">
-        <h3>Conferences & Seminars</h3>
-        <ul>
-            <li><strong>Conference 1:</strong> Talk title, year, location</li>
-            <li><strong>Seminar 1:</strong> Topic, institution, year</li>
-            <li><strong>Workshop 1:</strong> Title, year, location</li>
-        </ul>
-    </div>
+        <!-- Teaching -->
+        <div id="teaching" class="section">
+            <h3>Teaching</h3>
+            <ul>
+                <li><strong>Course 1:</strong> Statistical Learning – Undergraduate course</li>
+                <li><strong>Course 2:</strong> Stochastic Processes – Graduate course</li>
+                <li><strong>Supervision:</strong> Student projects, theses, and internships supervised</li>
+            </ul>
+        </div>
 
-    <!-- Section Contact -->
-    <div id="contact" class="section">
-        <h3>Contact</h3>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-            <li><strong>LinkedIn:</strong> <a href="#">Link</a></li>
-            <li><strong>ResearchGate:</strong> <a href="#">Link</a></li>
-        </ul>
+        <!-- Conferences -->
+        <div id="conferences" class="section">
+            <h3>Conferences & Seminars</h3>
+            <ul>
+                <li><strong>Conference 1:</strong> Title of talk, Year, Location</li>
+                <li><strong>Seminar 1:</strong> Topic, Institution, Year</li>
+                <li><strong>Workshop 1:</strong> Title, Year, Location</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="section">
+            <h3>Contact</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="#">Link</a></li>
+                <li><strong>ResearchGate:</strong> <a href="#">Link</a></li>
+            </ul>
+        </div>
+
     </div>
 
 </body>
