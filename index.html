@@ -81,10 +81,11 @@
             border-radius: 10px;
             max-width: 900px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
         }
 
         #projects h3, #publications h3, #cv h3, #teaching h3, #conferences h3, #contact h3 {
-            margin-top: 0;
+            margin-top: 10px;
             color: #222;
             font-size: 1.6em;
         }
@@ -97,6 +98,14 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Style pour les images des sections */
+        .section-img {
+            width: 60px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
     </style>
 </head>
 <body>
@@ -142,40 +151,46 @@
                 <h4>Contact</h4>
                 <p>Reach me via email or academic networks.</p>
             </a>
-        </div> <!-- FIN .sections -->
+        </div>
 
-        <!-- Sections détaillées -->
+        <!-- Sections détaillées avec images -->
         <div id="projects">
+            <img src="projects.png" alt="Projects illustration" class="section-img">
             <h3>Projects</h3>
             <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
         </div>
 
         <div id="publications">
+            <img src="publications.png" alt="Publications illustration" class="section-img">
             <h3>Publications</h3>
             <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
         </div>
 
         <div id="cv">
+            <img src="cv.png" alt="CV illustration" class="section-img">
             <h3>CV</h3>
             <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
         </div>
 
         <div id="teaching">
+            <img src="teaching.png" alt="Teaching illustration" class="section-img">
             <h3>Teaching</h3>
             <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
         </div>
 
         <div id="conferences">
+            <img src="conferences.png" alt="Conferences illustration" class="section-img">
             <h3>Conferences & Seminars</h3>
             <p>Include talks, workshops, and academic presentations with dates and locations.</p>
         </div>
 
         <div id="contact">
+            <img src="contact.png" alt="Contact illustration" class="section-img">
             <h3>Contact</h3>
             <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
         </div>
 
-    </div> <!-- FIN .content -->
+    </div>
 
 </body>
 </html>
