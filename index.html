@@ -1,162 +1,123 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Eddy Ella Minsta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #111;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<title>Eddy Ella Minsta</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-        /* Banner du chercheur */
-        .banner {
-            width: 100%;
-            height: 300px;
-            background-image: url('banner.png'); /* Remplacer par l'image du banner */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: left;
-            color: white;
-            padding: 1em;
-        }
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #111;
+    line-height: 1.6;
+}
 
-        .banner img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid rgba(255,255,255,0.8);
-            margin-right: 1em;
-        }
+html { scroll-behavior: smooth; }
 
-        .banner-text h1 {
-            margin: 0;
-            font-size: 2em;
-        }
+/* Banner */
+.banner {
+    background-color: #1f2937;
+    color: white;
+    padding: 40px 20px;
+}
 
-        .banner-text h2 {
-            margin: 0.2em 0;
-            font-weight: 400;
-            font-size: 1.2em;
-        }
+.banner h1 {
+    margin: 0;
+    font-size: 28px;
+}
 
-        /* Navigation */
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 1em 0;
-        }
+.banner p {
+    margin: 5px 0 0 0;
+    font-weight: 400;
+}
 
-        .nav a {
-            text-decoration: none;
-            color: #007acc;
-            font-weight: 600;
-            padding: 6px 12px;
-            border-radius: 4px;
-            transition: background 0.2s;
-        }
+/* Navigation */
+.nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
 
-        .nav a:hover {
-            background-color: #e0f0ff;
-        }
+.nav a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+}
 
-        /* Sections */
-        .section {
-            max-width: 1000px;
-            margin: 2em auto;
-            padding: 2em;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+.nav a:hover {
+    color: #007acc;
+}
 
-        .section h3 {
-            margin-top: 0;
-            color: #222;
-            font-size: 1.6em;
-        }
+/* Sections */
+.section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-        /* Tables sobres */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1em;
-        }
+.section h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
 
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        table th {
-            background-color: #f0f0f0;
-            text-align: left;
-        }
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
 
-        table tr:nth-child(even) {
-            background-color: #fafafa;
-        }
+th {
+    font-weight: 600;
+}
 
-        table tr:hover {
-            background-color: #f1f9ff;
-        }
+tr:hover {
+    background-color: #f5f5f5;
+}
 
-        html { scroll-behavior: smooth; }
-
-        .cv-download {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 16px;
-            background-color: #007acc;
-            color: white;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .cv-download:hover {
-            background-color: #005fa3;
-        }
-    </style>
+ul {
+    padding-left: 20px;
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Banner -->
-    <div class="banner">
-        <img src="photo.jpg" alt="Photo de Eddy Ella Minsta">
-        <div class="banner-text">
-            <h1>Eddy Ella Minsta</h1>
-            <h2>Researcher in Statistics</h2>
-            <p>Nonparametric estimation, Statistical learning for SDE paths, Statistical inference for SDE.</p>
-        </div>
-    </div>
+<!-- Banner -->
+<div class="banner">
+    <h1>Eddy Ella Minsta</h1>
+    <p>Researcher in Statistics — Nonparametric Estimation, Statistical Learning for SDE, Inference for Stochastic Processes</p>
+</div>
 
-    <!-- Navigation -->
-    <div class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#cv">CV</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#conferences">Conferences</a>
-        <a href="#contact">Contact</a>
-    </div>
+<!-- Navigation -->
+<div class="nav">
+    <a href="#projects">Work in Progress</a>
+    <a href="#preprints">Preprints</a>
+    <a href="#publications">Publications</a>
+    <a href="#cv">CV</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#conferences">Conferences</a>
+    <a href="#contact">Contact</a>
+</div>
 
-    <div class="content">
-
-       <!-- Section Work in Progress -->
+<!-- Work in Progress -->
 <div id="projects" class="section">
     <h3>Work in Progress</h3>
-    <!-- Tableau adaptable solo/collaboratif -->
     <table>
         <thead>
             <tr>
@@ -167,35 +128,22 @@
         </thead>
         <tbody>
             <tr>
-                <td>Project 1</td>
-                <td>Brief description of the ongoing work, objectives, or methodology.</td>
+                <td>Project Title 1</td>
+                <td>Brief description of the ongoing research project.</td>
                 <td>Solo</td>
             </tr>
             <tr>
-                <td>Project 2</td>
-                <td>Brief description of the ongoing work, objectives, or methodology.</td>
-                <td>Author A, Author B</td>
-            </tr>
-            <tr>
-                <td>Project 3</td>
-                <td>Brief description of the ongoing work, objectives, or methodology.</td>
-                <td>Solo</td>
+                <td>Project Title 2</td>
+                <td>Short explanation of objectives and methodology.</td>
+                <td>E. Ella Minsta, Collaborator</td>
             </tr>
         </tbody>
     </table>
-
-    <!-- Commentaires pour remplissage futur -->
-    <!--
-        Title: Nom du projet ou travail en cours
-        Description: Objectif, méthodologie, bref résumé
-        Authors: Mentionner "Solo" si aucun collaborateur, sinon noms des co-auteurs
-        Ce format fonctionne pour projets solo ou collaboratifs.
-    -->
 </div>
-        <!-- Section Preprints -->
+
+<!-- Preprints -->
 <div id="preprints" class="section">
     <h3>Preprints</h3>
-
     <table>
         <thead>
             <tr>
@@ -213,105 +161,80 @@
                 <td>2026</td>
             </tr>
             <tr>
-                <td>E. Ella Minsta, Author B</td>
+                <td>E. Ella Minsta, Collaborator</td>
                 <td>Another Preprint Title</td>
-                <td>Under review</td>
+                <td>Under Review</td>
                 <td>2026</td>
             </tr>
         </tbody>
     </table>
-
-    <!--
-        Authors: Liste des auteurs
-        Title: Titre complet du preprint
-        Status: Submitted / Under review / Revision / Accepted
-        Year: Année de mise en ligne
-        Si nécessaire, le lien (arXiv/HAL) peut être intégré dans le titre
-    -->
 </div>
 
-        <!-- Publications -->
-        <div id="publications" class="section">
-            <h3>Publications</h3>
-            <!-- Tableau des publications académique -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Authors</th>
-                        <th>Title</th>
-                        <th>Journal / Conference</th>
-                        <th>Year</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Author et al.</td>
-                        <td>Title of Paper 1</td>
-                        <td>Journal A</td>
-                        <td>2022</td>
-                        <td><a href="#">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>Author et al.</td>
-                        <td>Title of Paper 2</td>
-                        <td>Journal B</td>
-                        <td>2021</td>
-                        <td><a href="#">Link</a></td>
-                    </tr>
-                    <tr>
-                        <td>Author et al.</td>
-                        <td>Title of Paper 3</td>
-                        <td>Conference C</td>
-                        <td>2020</td>
-                        <td><a href="#">Link</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<!-- Publications -->
+<div id="publications" class="section">
+    <h3>Publications</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Authors</th>
+                <th>Title</th>
+                <th>Journal</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E. Ella Minsta</td>
+                <td>Title of Published Paper</td>
+                <td>Journal Name</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>E. Ella Minsta, Collaborator</td>
+                <td>Another Published Paper</td>
+                <td>Journal Name</td>
+                <td>2023</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-        <!-- CV -->
-        <div id="cv" class="section">
-            <h3>Curriculum Vitae</h3>
-            <ul>
-                <li><strong>Education:</strong> PhD in Statistics – University, Year</li>
-                <li><strong>Positions:</strong> Current and previous academic positions</li>
-                <li><strong>Awards:</strong> List of honors and recognitions</li>
-            </ul>
-            <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV (PDF)</a>
-        </div>
+<!-- CV -->
+<div id="cv" class="section">
+    <h3>Curriculum Vitae</h3>
+    <ul>
+        <li>PhD in Statistics — University Name</li>
+        <li>Current Position — Institution</li>
+        <li>Research Interests — Nonparametric Inference, SDE, Statistical Learning</li>
+    </ul>
+</div>
 
-        <!-- Teaching -->
-        <div id="teaching" class="section">
-            <h3>Teaching</h3>
-            <ul>
-                <li><strong>Course 1:</strong> Statistical Learning – Undergraduate course</li>
-                <li><strong>Course 2:</strong> Stochastic Processes – Graduate course</li>
-                <li><strong>Supervision:</strong> Student projects, theses, and internships supervised</li>
-            </ul>
-        </div>
+<!-- Teaching -->
+<div id="teaching" class="section">
+    <h3>Teaching</h3>
+    <ul>
+        <li>Statistical Learning — Graduate Course</li>
+        <li>Probability Theory — Undergraduate Course</li>
+    </ul>
+</div>
 
-        <!-- Conferences -->
-        <div id="conferences" class="section">
-            <h3>Conferences & Seminars</h3>
-            <ul>
-                <li><strong>Conference 1:</strong> Title of talk, Year, Location</li>
-                <li><strong>Seminar 1:</strong> Topic, Institution, Year</li>
-                <li><strong>Workshop 1:</strong> Title, Year, Location</li>
-            </ul>
-        </div>
+<!-- Conferences -->
+<div id="conferences" class="section">
+    <h3>Conferences</h3>
+    <ul>
+        <li>Conference Name — Talk Title — 2025</li>
+        <li>Seminar Name — Invited Talk — 2024</li>
+    </ul>
+</div>
 
-        <!-- Contact -->
-        <div id="contact" class="section">
-            <h3>Contact</h3>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="#">Link</a></li>
-                <li><strong>ResearchGate:</strong> <a href="#">Link</a></li>
-            </ul>
-        </div>
-
-    </div>
+<!-- Contact -->
+<div id="contact" class="section">
+    <h3>Contact</h3>
+    <ul>
+        <li>Email: your.email@institution.edu</li>
+        <li>Office: Institution Address</li>
+    </ul>
+</div>
 
 </body>
 </html>
