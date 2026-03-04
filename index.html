@@ -37,9 +37,6 @@
             margin: auto;
         }
 
-        /* ------------------ */
-        /* Pills sous la bannière avec glow */
-        /* ------------------ */
         .sections {
             display: flex;
             justify-content: center;
@@ -53,8 +50,7 @@
             background: #007acc;
             color: white;
             padding: 10px 20px;
-            border-radius: 50px; /* pill shape */
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
@@ -63,10 +59,10 @@
         .card:hover {
             background: #005fa3;
             transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,122,204,0.4); /* glow bleu */
+            box-shadow: 0 4px 20px rgba(0,122,204,0.4);
         }
 
-        /* Sections détaillées */
+        /* Sections */
         #projects, #publications, #cv, #teaching, #conferences, #contact {
             background: #f8f8f8;
             margin: 2em auto;
@@ -74,11 +70,10 @@
             border-radius: 10px;
             max-width: 900px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            text-align: center;
         }
 
         #projects h3, #publications h3, #cv h3, #teaching h3, #conferences h3, #contact h3 {
-            margin-top: 10px;
+            margin-top: 0;
             color: #222;
             font-size: 1.6em;
         }
@@ -90,19 +85,6 @@
 
         html { scroll-behavior: smooth; }
 
-        /* Icônes des sections */
-        .section-img {
-            width: 60px;
-            display: block;
-            margin: 0 auto 10px auto;
-            transition: transform 0.3s ease;
-        }
-
-        .section-img:hover {
-            transform: scale(1.2) rotate(10deg);
-        }
-
-        /* Lien de téléchargement CV */
         .cv-download {
             display: inline-block;
             margin-top: 10px;
@@ -118,6 +100,9 @@
         .cv-download:hover {
             background-color: #005fa3;
         }
+
+        ul { text-align: left; margin-left: 20px; }
+
     </style>
 </head>
 <body>
@@ -134,7 +119,6 @@
     </div>
 </div>
 
-<!-- Pills sous la bannière -->
 <div class="sections">
     <a href="#projects" class="card">Projects</a>
     <a href="#publications" class="card">Publications</a>
@@ -146,41 +130,71 @@
 
 <div class="content">
 
+    <!-- Projects template -->
     <div id="projects">
-        <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects illustration" class="section-img">
         <h3>Projects</h3>
-        <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
+        <p>Short description of your research projects. You can include links or collaborators.</p>
+        <ul>
+            <li>Project 1 – brief description and objectives.</li>
+            <li>Project 2 – brief description and objectives.</li>
+            <li>Project 3 – ongoing or future work.</li>
+        </ul>
     </div>
 
+    <!-- Publications template -->
     <div id="publications">
-        <img src="https://img.icons8.com/ios-filled/50/000000/books.png" alt="Publications illustration" class="section-img">
         <h3>Publications</h3>
-        <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
+        <p>List of your key scientific contributions. Include links to arXiv, HAL, or DOI if available.</p>
+        <ul>
+            <li>Author et al., "Title of Paper 1", Journal, Year. <a href="#">Link</a></li>
+            <li>Author et al., "Title of Paper 2", Journal, Year. <a href="#">Link</a></li>
+            <li>Author et al., "Title of Paper 3", Journal, Year. <a href="#">Link</a></li>
+        </ul>
     </div>
 
+    <!-- CV template -->
     <div id="cv">
-        <img src="https://img.icons8.com/ios-filled/50/000000/resume.png" alt="CV illustration" class="section-img">
         <h3>CV</h3>
-        <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
+        <p>Brief overview of academic background, positions, and awards.</p>
+        <ul>
+            <li>PhD in Statistics – University, Year</li>
+            <li>Postdoc – Lab / Institution, Year</li>
+            <li>Current position – Institution</li>
+        </ul>
         <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV</a>
     </div>
 
+    <!-- Teaching template -->
     <div id="teaching">
-        <img src="https://img.icons8.com/ios-filled/50/000000/teacher.png" alt="Teaching illustration" class="section-img">
         <h3>Teaching</h3>
-        <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
+        <p>Courses, tutorials, and student supervision.</p>
+        <ul>
+            <li>Course 1 – Description</li>
+            <li>Course 2 – Description</li>
+            <li>Supervision – List of students / projects</li>
+        </ul>
     </div>
 
+    <!-- Conferences & Seminars template -->
     <div id="conferences">
-        <img src="https://img.icons8.com/ios-filled/50/000000/microphone.png" alt="Conferences illustration" class="section-img">
         <h3>Conferences & Seminars</h3>
-        <p>Include talks, workshops, and academic presentations with dates and locations.</p>
+        <p>Talks, workshops, and presentations.</p>
+        <ul>
+            <li>Conference 1 – Title of talk, Year, Location</li>
+            <li>Seminar 1 – Topic, Institution, Year</li>
+            <li>Workshop 1 – Title, Year</li>
+        </ul>
     </div>
 
+    <!-- Contact template -->
     <div id="contact">
-        <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Contact illustration" class="section-img">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>You can reach me via email or professional networks.</p>
+        <ul>
+            <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            <li>LinkedIn: <a href="#">Link</a></li>
+            <li>ResearchGate: <a href="#">Link</a></li>
+        </ul>
     </div>
 
 </div>
