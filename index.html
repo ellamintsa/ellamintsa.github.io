@@ -16,21 +16,42 @@ body {
 
 html { scroll-behavior: smooth; }
 
-/* Banner */
+/* Banner with background image */
 .banner {
-    background-color: #1f2937;
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
     color: white;
-    padding: 40px 20px;
 }
 
-.banner h1 {
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: rgba(0,0,0,0.55);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.banner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.banner-text h1 {
     margin: 0;
     font-size: 28px;
 }
 
-.banner p {
-    margin: 5px 0 0 0;
-    font-weight: 400;
+.banner-text p {
+    margin: 5px 0;
 }
 
 /* Navigation */
@@ -100,8 +121,14 @@ ul {
 
 <!-- Banner -->
 <div class="banner">
-    <h1>Eddy Ella Minsta</h1>
-    <p>Researcher in Statistics — Nonparametric Estimation, Statistical Learning for SDE, Inference for Stochastic Processes</p>
+    <div class="banner-content">
+        <img src="photo.jpg" alt="Eddy Ella Minsta">
+        <div class="banner-text">
+            <h1>Eddy Ella Minsta</h1>
+            <p>Researcher in Statistics</p>
+            <p>Nonparametric Estimation • Statistical Learning for SDE • Inference for Stochastic Processes</p>
+        </div>
+    </div>
 </div>
 
 <!-- Navigation -->
@@ -132,11 +159,6 @@ ul {
                 <td>Brief description of the ongoing research project.</td>
                 <td>Solo</td>
             </tr>
-            <tr>
-                <td>Project Title 2</td>
-                <td>Short explanation of objectives and methodology.</td>
-                <td>E. Ella Minsta, Collaborator</td>
-            </tr>
         </tbody>
     </table>
 </div>
@@ -158,12 +180,6 @@ ul {
                 <td>E. Ella Minsta</td>
                 <td>Title of the Preprint</td>
                 <td>Submitted</td>
-                <td>2026</td>
-            </tr>
-            <tr>
-                <td>E. Ella Minsta, Collaborator</td>
-                <td>Another Preprint Title</td>
-                <td>Under Review</td>
                 <td>2026</td>
             </tr>
         </tbody>
@@ -189,12 +205,6 @@ ul {
                 <td>Journal Name</td>
                 <td>2024</td>
             </tr>
-            <tr>
-                <td>E. Ella Minsta, Collaborator</td>
-                <td>Another Published Paper</td>
-                <td>Journal Name</td>
-                <td>2023</td>
-            </tr>
         </tbody>
     </table>
 </div>
@@ -205,7 +215,6 @@ ul {
     <ul>
         <li>PhD in Statistics — University Name</li>
         <li>Current Position — Institution</li>
-        <li>Research Interests — Nonparametric Inference, SDE, Statistical Learning</li>
     </ul>
 </div>
 
@@ -214,7 +223,6 @@ ul {
     <h3>Teaching</h3>
     <ul>
         <li>Statistical Learning — Graduate Course</li>
-        <li>Probability Theory — Undergraduate Course</li>
     </ul>
 </div>
 
@@ -223,7 +231,6 @@ ul {
     <h3>Conferences</h3>
     <ul>
         <li>Conference Name — Talk Title — 2025</li>
-        <li>Seminar Name — Invited Talk — 2024</li>
     </ul>
 </div>
 
@@ -232,7 +239,6 @@ ul {
     <h3>Contact</h3>
     <ul>
         <li>Email: your.email@institution.edu</li>
-        <li>Office: Institution Address</li>
     </ul>
 </div>
 
