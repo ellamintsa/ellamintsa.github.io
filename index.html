@@ -37,9 +37,7 @@
             margin: auto;
         }
 
-        /* ------------------ */
         /* Pills sous la bannière avec glow */
-        /* ------------------ */
         .sections {
             display: flex;
             justify-content: center;
@@ -66,17 +64,21 @@
             box-shadow: 0 4px 20px rgba(0,122,204,0.4);
         }
 
-        /* Sections détaillées */
-        #projects, #publications, #cv, #teaching, #conferences, #contact {
+        /* Sections détaillées avec alternance de fonds */
+        #projects, #cv, #conferences {
             background: #f8f8f8;
+        }
+        #publications, #teaching, #contact {
+            background: #e6edf7; /* léger bleu pour contraste */
+        }
+
+        #projects, #publications, #cv, #teaching, #conferences, #contact {
             margin: 2em auto;
             padding: 2em;
             border-radius: 10px;
             max-width: 900px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
-
-            /* fade-in effect initial */
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -95,7 +97,6 @@
 
         html { scroll-behavior: smooth; }
 
-        /* Icônes des sections */
         .section-img {
             width: 60px;
             display: block;
@@ -107,7 +108,6 @@
             transform: scale(1.2) rotate(10deg);
         }
 
-        /* Lien de téléchargement CV */
         .cv-download {
             display: inline-block;
             margin-top: 10px;
@@ -124,7 +124,6 @@
             background-color: #005fa3;
         }
 
-        /* Class visible pour fade-in */
         .visible {
             opacity: 1;
             transform: translateY(0);
