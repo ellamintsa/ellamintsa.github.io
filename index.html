@@ -87,10 +87,16 @@
 
         html { scroll-behavior: smooth; }
 
+        /* Icônes des sections */
         .section-img {
             width: 60px;
             display: block;
             margin: 0 auto 10px auto;
+            transition: transform 0.3s ease; /* animation fluide */
+        }
+
+        .section-img:hover {
+            transform: scale(1.2) rotate(10deg); /* zoom + légère rotation */
         }
 
         /* Lien de téléchargement CV */
@@ -109,7 +115,6 @@
         .cv-download:hover {
             background-color: #005fa3;
         }
-
     </style>
 </head>
 <body>
