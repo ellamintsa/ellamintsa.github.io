@@ -37,7 +37,9 @@
             margin: auto;
         }
 
+        /* ------------------ */
         /* Pills sous la bannière avec glow */
+        /* ------------------ */
         .sections {
             display: flex;
             justify-content: center;
@@ -51,7 +53,7 @@
             background: #007acc;
             color: white;
             padding: 10px 20px;
-            border-radius: 50px;
+            border-radius: 50px; /* pill shape */
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             text-decoration: none;
             font-weight: 600;
@@ -61,27 +63,18 @@
         .card:hover {
             background: #005fa3;
             transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0,122,204,0.4);
+            box-shadow: 0 4px 20px rgba(0,122,204,0.4); /* glow bleu */
         }
 
-        /* Sections détaillées avec alternance de fonds */
-        #projects, #cv, #conferences {
-            background: #f8f8f8;
-        }
-        #publications, #teaching, #contact {
-            background: #e6edf7; /* léger bleu pour contraste */
-        }
-
+        /* Sections détaillées */
         #projects, #publications, #cv, #teaching, #conferences, #contact {
+            background: #f8f8f8;
             margin: 2em auto;
             padding: 2em;
             border-radius: 10px;
             max-width: 900px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             text-align: center;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
         #projects h3, #publications h3, #cv h3, #teaching h3, #conferences h3, #contact h3 {
@@ -97,6 +90,7 @@
 
         html { scroll-behavior: smooth; }
 
+        /* Icônes des sections */
         .section-img {
             width: 60px;
             display: block;
@@ -108,6 +102,7 @@
             transform: scale(1.2) rotate(10deg);
         }
 
+        /* Lien de téléchargement CV */
         .cv-download {
             display: inline-block;
             margin-top: 10px;
@@ -123,12 +118,6 @@
         .cv-download:hover {
             background-color: #005fa3;
         }
-
-        .visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
     </style>
 </head>
 <body>
@@ -157,66 +146,44 @@
 
 <div class="content">
 
-    <div id="projects" class="fade-section">
+    <div id="projects">
         <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects illustration" class="section-img">
         <h3>Projects</h3>
         <p>Here you can describe your research projects, collaborations, or ongoing works.</p>
     </div>
 
-    <div id="publications" class="fade-section">
+    <div id="publications">
         <img src="https://img.icons8.com/ios-filled/50/000000/books.png" alt="Publications illustration" class="section-img">
         <h3>Publications</h3>
         <p>List your articles, preprints, and other scientific contributions with links (HAL, arXiv, DOI).</p>
     </div>
 
-    <div id="cv" class="fade-section">
+    <div id="cv">
         <img src="https://img.icons8.com/ios-filled/50/000000/resume.png" alt="CV illustration" class="section-img">
         <h3>CV</h3>
         <p>Provide a downloadable PDF or a structured summary of your academic background.</p>
         <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV</a>
     </div>
 
-    <div id="teaching" class="fade-section">
+    <div id="teaching">
         <img src="https://img.icons8.com/ios-filled/50/000000/teacher.png" alt="Teaching illustration" class="section-img">
         <h3>Teaching</h3>
         <p>Mention courses taught, tutorials, and supervision of students or projects.</p>
     </div>
 
-    <div id="conferences" class="fade-section">
+    <div id="conferences">
         <img src="https://img.icons8.com/ios-filled/50/000000/microphone.png" alt="Conferences illustration" class="section-img">
         <h3>Conferences & Seminars</h3>
         <p>Include talks, workshops, and academic presentations with dates and locations.</p>
     </div>
 
-    <div id="contact" class="fade-section">
+    <div id="contact">
         <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Contact illustration" class="section-img">
         <h3>Contact</h3>
         <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
     </div>
 
 </div>
-
-<script>
-    // Fade-in on scroll
-    const faders = document.querySelectorAll('.fade-section');
-
-    const appearOptions = {
-        threshold: 0.2,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) return;
-            entry.target.classList.add('visible');
-            appearOnScroll.unobserve(entry.target);
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
-</script>
 
 </body>
 </html>
