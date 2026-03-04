@@ -40,6 +40,39 @@
             max-width: 900px;
             margin: auto;
         }
+        /* Conteneur des cartes */
+.sections {
+    display: flex;              /* aligne les cartes horizontalement */
+    justify-content: space-around; /* espace entre les cartes */
+    margin-top: 2em;            /* espace au-dessus */
+    flex-wrap: wrap;            /* passe à la ligne sur petits écrans */
+}
+
+/* Style de chaque carte */
+.card {
+    background: white;                     /* fond blanc */
+    width: 250px;                          /* largeur fixe */
+    margin: 1em;                           /* marge entre les cartes */
+    padding: 1.5em;                        /* espace interne */
+    border-radius: 12px;                   /* coins arrondis */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* ombre douce */
+    text-align: center;                     /* texte centré */
+    transition: transform 0.2s, box-shadow 0.2s; /* animation hover */
+    cursor: pointer;                        /* souris en main */
+}
+
+/* Effet hover */
+.card:hover {
+    transform: translateY(-5px);                  /* s'élève légèrement */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);     /* ombre plus marquée */
+}
+
+/* Style des liens dans la carte */
+.card a {
+    text-decoration: none; /* supprime le soulignement */
+    color: #111;           /* couleur du texte */
+    font-weight: 600;      /* texte un peu plus gras */
+}
     </style>
 </head>
 <body>
