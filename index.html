@@ -33,7 +33,7 @@
 
         .content {
             padding: 2em;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
@@ -62,13 +62,50 @@
             box-shadow: 0 4px 20px rgba(0,122,204,0.4);
         }
 
-        /* Sections */
+        /* Mini-cards à l’intérieur des sections */
+        .mini-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 1em;
+        }
+
+        .mini-card {
+            background: white;
+            flex: 1 1 250px;
+            padding: 1em;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .mini-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .mini-card h4 {
+            margin-top: 0;
+            color: #007acc;
+        }
+
+        .mini-card p {
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .mini-card a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: 600;
+        }
+
         #projects, #publications, #cv, #teaching, #conferences, #contact {
             background: #f8f8f8;
             margin: 2em auto;
             padding: 2em;
             border-radius: 10px;
-            max-width: 900px;
+            max-width: 1000px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
@@ -101,8 +138,6 @@
             background-color: #005fa3;
         }
 
-        ul { text-align: left; margin-left: 20px; }
-
     </style>
 </head>
 <body>
@@ -130,71 +165,121 @@
 
 <div class="content">
 
-    <!-- Projects template -->
+    <!-- Projects -->
     <div id="projects">
         <h3>Projects</h3>
-        <p>Short description of your research projects. You can include links or collaborators.</p>
-        <ul>
-            <li>Project 1 – brief description and objectives.</li>
-            <li>Project 2 – brief description and objectives.</li>
-            <li>Project 3 – ongoing or future work.</li>
-        </ul>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Project 1</h4>
+                <p>Study of stochastic differential equations in finance. <a href="#">Read more</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>Project 2</h4>
+                <p>Nonparametric statistical methods for diffusion data. <a href="#">Read more</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>Project 3</h4>
+                <p>Machine learning approaches for SDE path prediction. <a href="#">Read more</a></p>
+            </div>
+        </div>
     </div>
 
-    <!-- Publications template -->
+    <!-- Publications -->
     <div id="publications">
         <h3>Publications</h3>
-        <p>List of your key scientific contributions. Include links to arXiv, HAL, or DOI if available.</p>
-        <ul>
-            <li>Author et al., "Title of Paper 1", Journal, Year. <a href="#">Link</a></li>
-            <li>Author et al., "Title of Paper 2", Journal, Year. <a href="#">Link</a></li>
-            <li>Author et al., "Title of Paper 3", Journal, Year. <a href="#">Link</a></li>
-        </ul>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Paper 1</h4>
+                <p>Author et al., "Title of Paper", Journal, Year. <a href="#">Link</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>Paper 2</h4>
+                <p>Author et al., "Title of Paper", Journal, Year. <a href="#">Link</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>Paper 3</h4>
+                <p>Author et al., "Title of Paper", Journal, Year. <a href="#">Link</a></p>
+            </div>
+        </div>
     </div>
 
-    <!-- CV template -->
+    <!-- CV -->
     <div id="cv">
         <h3>CV</h3>
-        <p>Brief overview of academic background, positions, and awards.</p>
-        <ul>
-            <li>PhD in Statistics – University, Year</li>
-            <li>Postdoc – Lab / Institution, Year</li>
-            <li>Current position – Institution</li>
-        </ul>
-        <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV</a>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Education</h4>
+                <p>PhD in Statistics – University, Year</p>
+                <p>Postdoc – Institution, Year</p>
+            </div>
+            <div class="mini-card">
+                <h4>Positions</h4>
+                <p>Current position – Institution</p>
+                <p>Previous positions – Lab / Institution</p>
+            </div>
+            <div class="mini-card">
+                <h4>Awards</h4>
+                <p>List of awards and honors received</p>
+                <a href="Eddy_Ella_Minsta_CV.pdf" download class="cv-download">Download CV</a>
+            </div>
+        </div>
     </div>
 
-    <!-- Teaching template -->
+    <!-- Teaching -->
     <div id="teaching">
         <h3>Teaching</h3>
-        <p>Courses, tutorials, and student supervision.</p>
-        <ul>
-            <li>Course 1 – Description</li>
-            <li>Course 2 – Description</li>
-            <li>Supervision – List of students / projects</li>
-        </ul>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Course 1</h4>
+                <p>Statistical Learning – Undergraduate course</p>
+            </div>
+            <div class="mini-card">
+                <h4>Course 2</h4>
+                <p>Stochastic Processes – Graduate course</p>
+            </div>
+            <div class="mini-card">
+                <h4>Supervision</h4>
+                <p>Student projects, theses, and internships supervised</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Conferences & Seminars template -->
+    <!-- Conferences -->
     <div id="conferences">
         <h3>Conferences & Seminars</h3>
-        <p>Talks, workshops, and presentations.</p>
-        <ul>
-            <li>Conference 1 – Title of talk, Year, Location</li>
-            <li>Seminar 1 – Topic, Institution, Year</li>
-            <li>Workshop 1 – Title, Year</li>
-        </ul>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Conference 1</h4>
+                <p>Title of talk, Year, Location</p>
+            </div>
+            <div class="mini-card">
+                <h4>Seminar 1</h4>
+                <p>Topic, Institution, Year</p>
+            </div>
+            <div class="mini-card">
+                <h4>Workshop 1</h4>
+                <p>Title, Year, Location</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Contact template -->
+    <!-- Contact -->
     <div id="contact">
         <h3>Contact</h3>
-        <p>You can reach me via email or professional networks.</p>
-        <ul>
-            <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-            <li>LinkedIn: <a href="#">Link</a></li>
-            <li>ResearchGate: <a href="#">Link</a></li>
-        </ul>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <h4>Email</h4>
+                <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>LinkedIn</h4>
+                <p><a href="#">Link</a></p>
+            </div>
+            <div class="mini-card">
+                <h4>ResearchGate</h4>
+                <p><a href="#">Link</a></p>
+            </div>
+        </div>
     </div>
 
 </div>
